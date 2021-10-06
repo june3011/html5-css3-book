@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    name 텍스트 필드를 구분할 수 있게 이름을 붙인다
+    size 텍스트 필드의 길이를 지정한다 글자 수 보다 텍스트 필드의 길이가 작다면 텍스트 필드의 길이만큼 밖에 보이지 않는다
+    value 텍스트 필드 요소가 화면에 표시될 때 텍스트 필드 부분에 표시될 내용이다 이 속성을 사용하지 않으면 빈 텍스트 필드가 표시된다
+    maxlength 텍스트 필드에 입력할 수 있는 최대 문자 개수르 지정합니다 
+    -->
+
+    <!-- <input type="hidden" name="이름" value="서버로 넘길 가" /> -->
+
+    <!-- 로그인 폼 -->
+    <form>
+      <fieldset>
+        <label>아이디:<input type="text" id="user_id" size="10" /></label>
+        <label>비밀번호:<input type="password" id="user_pw" size="10" /></label>
+        <input type="submit" value="로그인" />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>신청자</legend>
+        <label class="reg" for="uname">이름</label>
+        <input type="text" id="uname" autofocus required />
+      </fieldset>
+    </form>
+    <form>
+      <fieldset>
+        <legend>교재 주문</legend>
+        <label class="reg" for="group">단체주문</label>
+        <input
+          type="number"
+          id="group"
+          value="10"
+          min="10"
+          max="100"
+          step="10"
+        />
+      </fieldset>
+    </form>
+    <form>
+      <h1>회원 가입을 환영합니다</h1>
+      <label
+        >아이디:
+        <input
+          type="text"
+          id="user_id"
+          size="10"
+          minlength="4"
+          maxlength="15" /></label
+      ><small style="color: red"> 4~15자리 이내의 영문과 숫자</small>
+    </form>
+  </body>
+</html>

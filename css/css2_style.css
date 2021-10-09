@@ -1,0 +1,8 @@
+h1 {
+  color: purple; /* 글자 색 */
+}
+
+p {
+  font-size: 12px; /* 글자 크기 */
+  font-family: 돋움; /* 글꼴 */
+}

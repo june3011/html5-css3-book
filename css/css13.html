@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sqbullet {
+        list-style-type: square;
+      }
+      .nobullet {
+        list-style-type: none;
+      }
+      .book1 {
+        list-style-type: lower-alpha;
+      }
+      .book2 {
+        list-style-type: upper-roman;
+      }
+      .imgbullet {
+        list-style-image: url("https://github.com/funnycom/html5-css3/blob/master/06/images/dot.png?raw=true");
+      }
+      .inside {
+        list-style-position: inside;
+      }
+      .both {
+        list-style: lower-alpha, inside;
+        /* 
+          list-style-type:lower-alpha;
+          list-style-position:inside;
+          */
+      }
+      .nnnone {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>이지스퍼블리싱</h1>
+    <!-- 채운 사각형으로 불릿 바꾸기 -->
+    <ul class="sqbullet">
+      <li>회사소개</li>
+      <li>도서</li>
+      <li>자료실</li>
+      <li>질문답변</li>
+      <li>동영상강의</li>
+    </ul>
+
+    <!-- 불릿 없애기 -->
+    <ul class="nobullet">
+      <li>회사소개</li>
+      <li>도서</li>
+      <li>자료실</li>
+      <li>질문답변</li>
+      <li>동영상강의</li>
+    </ul>
+
+    <ol class="book1">
+      <li>Do it! 시리즈</li>
+      <li>된다 시리즈</li>
+      <li>DCM 프로 사진가</li>
+      <li>데이터과학 시리즈</li>
+    </ol>
+    <ol class="book2">
+      <li>Do it! 시리즈</li>
+      <li>된다 시리즈</li>
+      <li>DCM 프로 사진가</li>
+      <li>데이터과학 시리즈</li>
+    </ol>
+
+    <ul class="imgbullet">
+      <li>회사소개</li>
+      <li>도서</li>
+      <li>자료실</li>
+      <li>질문답변</li>
+      <li>동영상강의</li>
+    </ul>
+
+    <p><b>list-style-position을 지정하지 않음</b></p>
+    <ul>
+      <li>회사소개</li>
+      <li>도서</li>
+      <li>자료실</li>
+      <li>질문답변</li>
+      <li>동영상강의</li>
+    </ul>
+
+    <p><b>list-style-position : inside</b></p>
+    <ul class="inside">
+      <li>회사소개</li>
+      <li>도서</li>
+      <li>자료실</li>
+      <li>질문답변</li>
+      <li>동영상강의</li>
+    </ul>
+
+    <p>속성 한꺼번에 지정</p>
+    <ol class="both">
+      <li>회사소개</li>
+      <li>도서</li>
+      <li>자료실</li>
+      <li>질문답변</li>
+      <li>동영상강의</li>
+    </ol>
+
+    <h3>웹에서 사용하는 목록들</h3>
+    <ul class="nnnone">
+      <li>순서 목록</li>
+      <li>순서 없는 목록</li>
+      <li>설명 목록</li>
+    </ul>
+  </body>
+</html>

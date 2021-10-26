@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grad1 {
+        height: 100px;
+        width: 100px;
+        background: blue; /* 그라데이션을 지원하지 않는 브라우저용 */
+        background: -webkit-gradient(left top, blue, white);
+        background: -moz-linear-gradient(right bottom, blue, white);
+        background: -o-linear-gradient(right bottom, blue, white);
+        background: linear-gradient(
+          to right bottom,
+          blue,
+          white
+        ); /* 표준 구문 */
+      }
+      .grad2 {
+        height: 100px;
+        width: 100px;
+        background: #ff0000; /* css3 미지원 브라우저 */
+        background: -webkit-linear-gradient(
+          45deg,
+          #ff0000,
+          #ffffff
+        ); /* 초기 모던 브라우저 */
+        background: -moz-linear-gradient(
+          45deg,
+          #ff0000,
+          #ffffff
+        ); /* 초기 모던 브라우저 */
+        background: -o-linear-gradient(
+          45deg,
+          #ff0000,
+          #ffffff
+        ); /* 초기 모던 브라우저 */
+        background: linear-gradient(
+          45deg,
+          #ff0000,
+          #ffffff
+        ); /* 초기 모던 브라우저 */
+      }
+      .grad3 {
+        height: 100px;
+        width: 100px;
+        background: #06f; /* css3 미지원 브라우저 */
+        background-image: -webkit-linear-gradient(
+          top,
+          #06f,
+          white 30%,
+          #06f
+        ); /* 초기 브라우저 */
+
+        background-image: -moz-linear-gradient(
+          bottom,
+          #06f,
+          white 30%,
+          #06f
+        ); /* 초기 브라우저 */
+
+        background: -o-linear-gradient(
+          bottom,
+          #06f,
+          white 30%,
+          #06f
+        ); /* 초기 브라우저 */
+        background: linear-gradient(
+          to bottom,
+          #06f,
+          white 30%,
+          #06f
+        ); /* 최신 브라우저 */
+      }
+      .grad4 {
+        height: 100px;
+        width: 150px;
+        background: red; /* css3 미지원 브라우저 */
+        background: -webkit-radial-gradient(
+          circle,
+          white,
+          yellow,
+          red
+        ); /* 초기 모던 브라우저 */
+        background: -moz-radial-gradient(
+          circle,
+          white,
+          yellow,
+          red
+        ); /* 초기 모던 브라우저 */
+        background: -o-radial-gradient(
+          circle,
+          white,
+          yellow,
+          red
+        ); /* 초기 모던 브라우저 */
+        background: radial-gradient(
+          white,
+          yellow,
+          red
+        ); /* 최신 모던 브라우저 */
+      }
+      .grad5 {
+        height: 100px;
+        width: 150px;
+        background: red; /* css3 미지원 브라우저 */
+        background: -webkit-radial-gradient(
+          circle,
+          white,
+          yellow,
+          red
+        ); /* 초기 모던 브라우저 */
+        background: -moz-radial-gradient(
+          circle,
+          white,
+          yellow,
+          red
+        ); /* 초기 모던 브라우저 */
+        background: -o-radial-gradient(
+          circle,
+          white,
+          yellow,
+          red
+        ); /* 초기 모던 브라우저 */
+        background: radial-gradient(
+          circle,
+          white,
+          yellow,
+          red
+        ); /* 최신 모던 브라우저 */
+      }
+      .grad6 {
+        height: 100px;
+        width: 100px;
+        background: red; /* css3 미지원 브라우저 */
+        background: -webkit-repeating-linear-gradient(
+          yellow,
+          red 20px
+        ); /* 초기 모던 브라우저 */
+
+        background: -moz-repeating-linear-gradient(
+          yellow,
+          red 20px
+        ); /* 초기 모던 브라우저 */
+        background: -moz-repeating-linear-gradient(
+          yellow,
+          red 20px
+        ); /* 초기 모던 브라우저 */
+        background: repeating-linear-gradient(
+          yellow,
+          red 20px
+        ); /* 최신 모던 브라우저 */
+      }
+      .grad7 {
+        height: 100px;
+        width: 100px;
+        background: -webkit-repeating-linear-gradient(
+          yellow,
+          yellow 20px,
+          red 20px,
+          red 40px
+        );
+        background: -moz-repeating-linear-gradient(
+          yellow,
+          yellow,
+          red 20px,
+          red 40px
+        );
+        background: -o-repeating-linear-gradient(
+          yellow,
+          yellow 20px,
+          red 20px,
+          red 40px
+        );
+        background: repeating-linear-gradient(
+          yellow,
+          yellow 20px,
+          red 20px,
+          red 40px
+        );
+      }
+      .grad8 {
+        height: 100px;
+        width: 100px;
+        background: #ccc; /* css3 미지원 브라우저 */
+        background: -webkit-repeating-radial-gradient(
+          circle,
+          white,
+          #ccc 10%
+        ); /* 초기 모던 브라우저 */
+        background: -moz-repeating-radial-gradient(
+          circle,
+          white,
+          #ccc 10%
+        ); /* 초기 모던 브라우저 */
+        background: -o-repeating-radial-gradient(
+          circle,
+          white,
+          #ccc 10%
+        ); /* 초기 모던 브라우저 */
+        background: repeating-radial-gradient(
+          circle,
+          white,
+          #ccc 10%
+        ); /* 최신 모던 브라우저 */
+      }
+      .grad9 {
+        height: 100px;
+        width: 100px;
+        background: #ccc; /* css3 미지원 브라우저 */
+        background: -webkit-repeating-radial-gradient(
+          circle,
+          white,
+          white 10%,
+          #ccc 10%,
+          #ccc 20%
+        ); /* 초기 모던 브라우저 */
+        background: -moz-repeating-radial-gradient(
+          circle,
+          white,
+          white 10%,
+          #ccc 10%,
+          #ccc 20%
+        ); /* 초기 모던 브라우저 */
+        background: -o-repeating-radial-gradient(
+          circle,
+          white,
+          white 10%,
+          #ccc 10%,
+          #ccc 20%
+        ); /* 초기 모던 브라우저 */
+        background: repeating-radial-gradient(
+          circle,
+          white,
+          white 10%,
+          #ccc 10%,
+          #ccc 20%
+        ); /* 최신 모던 브라우저 */
+      }
+      .grad10 {
+        height: 200px;
+        width: 200px;
+        background: linear-gradient(to bottom, green, white);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+    <div class="grad4"></div>
+    <div class="grad5"></div>
+    <div class="grad6"></div>
+    <div class="grad7"></div>
+    <div class="grad8"></div>
+    <div class="grad9"></div>
+    <div class="grad10"></div>
+  </body>
+</html>

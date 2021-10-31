@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        background: rosybrown;
+        width: 200px;
+      }
+      div {
+        width: 200px;
+        height: 100px;
+        background: #0094ff;
+      }
+      .box1 {
+        margin: 30px 50px 30px 50px;
+      }
+      .box2 {
+        margin: 30px 50px;
+      }
+      .box3 {
+        margin: 50px;
+      }
+      .box4 {
+        margin: 30px 5px 10px 5px;
+      }
+      .box5 {
+        margin: 0 auto;
+        background: orange;
+      }
+      #box1 {
+        width: 200px;
+        height: 100px;
+        margin: 30px;
+        background: rgb(0, 77, 243);
+      }
+      #box2 {
+        width: 200px;
+        height: 100px;
+        margin: 30px;
+        background: rgb(255, 72, 0);
+      }
+      #box3 {
+        width: 200px;
+        height: 100px;
+        margin: 30px;
+        background: rgb(18, 219, 0);
+      }
+      #box4 {
+        width: 200px;
+        height: 100px;
+        margin: 30px;
+        display: inline-block;
+        background: rgb(0, 77, 243);
+      }
+      #box5 {
+        width: 200px;
+        height: 100px;
+        margin: 30px;
+        display: inline-block;
+        background: rgb(255, 72, 0);
+      }
+      #box6 {
+        width: 200px;
+        height: 100px;
+        margin: 30px;
+        display: inline-block;
+        background: rgb(18, 219, 0);
+      }
+      .boxx1 {
+        width: 200px;
+        height: auto;
+        background: #0094ff;
+        display: inline-block;
+        margin: 15px;
+        color: white;
+        padding: 10px 30px 10px 30px;
+      }
+      .boxx2 {
+        width: 200px;
+        height: auto;
+        background: #0094ff;
+        display: inline-block;
+        margin: 15px;
+        color: white;
+        padding: 10px 30px;
+      }
+      .boxx3 {
+        width: 200px;
+        height: auto;
+        background: #0094ff;
+        display: inline-block;
+        margin: 15px;
+        color: white;
+        padding: 10px;
+      }
+      .article {
+        width: 90%;
+        height: auto;
+        margin: 20px 10px;
+        padding: 20px;
+      }
+      #pet1 {
+        border: 3px solid black;
+        border-radius: 10px;
+        width: 200px;
+        height: 100px;
+        background: wheat;
+      }
+      #pet2 {
+        border: 3px dotted blue;
+        border-radius: 20px;
+        width: 200px;
+        height: 100px;
+        background: wheat;
+      }
+      #pet3 {
+        border: 4px double green;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 200px;
+        height: 100px;
+        background: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <p style="margin: 30px 50px">위아래 마진 - 30px, 좌우 마진 - 50px</p>
+    <p style="margin: 50px">네 방향 모두 마진 모두 50px</p>
+    <p style="margin: 30px 50px 30px 50px">
+      위아래 마진 - 30px, 좌우 마진 - 50px
+    </p>
+    <p style="margin: 30px 20px 50px">
+      위 마진 - 30px, 좌우 마진 - 20px, 아래 마진 - 50px
+    </p>
+
+    <div class="box1">마진-30px 50px 30px 50px</div>
+    <div class="box2">마진-30px 50px</div>
+    <div class="box3">마진-50px</div>
+    <div class="box4">마진-30px 5px 10px 5px</div>
+
+    <div class="box5">마진-0 auto 0 auto</div>
+
+    <!-- 마진 중첩 이해하기 -->
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+
+    <p>top -> right -> bottom -> left 순으로 (시계방향순으로) 패딩 지정</p>
+    <div class="boxx1">
+      패딩은 콘텐츠 영역과 ㅔㅌ두리 사이의 영역을 말합니다 패딩-10px 30px 10px
+      30px
+    </div>
+    <div class="boxx2">
+      패딩은 콘텐츠 영역과 ㅔㅌ두리 사이의 영역을 말합니다 패딩-10px 30px 10px
+      30px
+    </div>
+    <div class="boxx3">
+      패딩은 콘텐츠 영역과 ㅔㅌ두리 사이의 영역을 말합니다 패딩-10px 10px 10px
+      10px
+    </div>
+    <div class="article">
+      <p id="pet1"></p>
+      <p id="pet2"></p>
+      <p id="pet3"></p>
+    </div>
+  </body>
+</html>

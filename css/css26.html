@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        box-sizing: content-box;
+        /* 콘텐츠 영역 기준 */
+        width: 300px;
+        height: 150px;
+        margin: 10px;
+        padding: 30px;
+        border: 2px solid red;
+      }
+      .box2 {
+        box-sizing: border-box;
+        /* 테두리까지(박스 전체) 기준 */
+        width: 300px;
+        height: 150px;
+        margin: 10px;
+        padding: 30px;
+        border: 2px solid red;
+      }
+      .left-img {
+        float: left;
+        margin-right: 25px;
+      }
+      .mainBox {
+        width: 700px;
+      }
+      .box01 {
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        margin-right: 10px;
+        background: #ffd800;
+        float: left;
+      }
+      .box02 {
+        width: 100px;
+        height: 100px;
+        background: #0094ff;
+        padding: 20px;
+        margin-right: 10px;
+        float: left;
+      }
+      .box03 {
+        width: 100px;
+        height: 100px;
+        background: #00ff21;
+        padding: 20px;
+        float: left;
+      }
+      .box04 {
+        width: 100px;
+        height: 100px;
+        background: #ffffff;
+        padding: 20px;
+        float: right;
+        border: 1px solid black;
+      }
+      .boxx1 {
+        background: yellow;
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+      .boxx2 {
+        background: blue;
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+      .boxx3 {
+        background: green;
+        width: 400px;
+        height: 150px;
+      }
+      .boxx4 {
+        background: purple;
+        width: 400px;
+        height: 150px;
+        clear: both;
+        border-bottom: 10px;
+      }
+      #container {
+        border: 1px solid #ccc;
+        width: 960px;
+        padding: 20px;
+        margin: 0 auto; /* 화면 중앙에 배치 */
+      }
+      #header {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      #contents {
+        border: 1px solid #ccc;
+        width: 620px;
+        padding: 20px;
+        float: left;
+        margin-bottom: 20px;
+      }
+      #sidebar {
+        border: 1px solid #ccc;
+        width: 220px;
+        padding: 20px;
+        float: right;
+        margin-bottom: 20px;
+        background: silver;
+      }
+      #footer {
+        border: 1px solid #ccc;
+        clear: both; /* 양쪽 플로팅 해제 */
+        padding: 20px;
+      }
+      .boox1 {
+        float: left;
+        width: 100px;
+        background: #ffd800;
+        margin-right: 10px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box1">box-sizing = "content-box"</div>
+    <div class="box2">box-sizing = "border-box"</div>
+    <img
+      src="https://github.com/funnycom/html5-css3/blob/master/09/images/cover.jpg?raw=true"
+      class="left-img"
+    />
+    <h1>바쁜 3, 4학년을 위한 빠른 분수</h1>
+    <h2>3, 4학년이 꼭 알아야할 분수를 한 권...</h2>
+    <p>
+      한국 교육과정평가원이 최근 발...<br />
+      ㅁㄴㅇㄻ닝라ㅓ닝러민어림라<br />
+      ㅁㅁㄴㄹ말오만로미언림ㄴ어러<br />
+      asdfasdflkajsldfjalkfdjalskdfj
+    </p>
+    <div class="mainBox">
+      <div class="box01"></div>
+      <div class="box02"></div>
+      <div class="box03"></div>
+      <div class="box04"></div>
+    </div> -->
+
+    <div class="boxx1">box1</div>
+    <!-- 왼쪽에 배치 -->
+    <div class="boxx2">box2</div>
+    <!-- boxx1에 이어 왼쪽에 배치 -->
+    <div class="boxx3"></div>
+    <!-- float 지정하지 않았기 때문에 boxx1, boxx2와 겹쳐 표시 -->
+    <div class="boxx4"></div>
+    <!-- clear 속성을 사용했기 때문에 앞에서 사용한 float:let가 해제됨 -->
+    <div id="container">
+      <div id="header">
+        <h1>사이트 제목</h1>
+      </div>
+
+      <div id="sidebar">
+        <h2>사이드바</h2>
+        <ul>
+          <li>
+            모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는
+            교육을 받게 할 의무를 진다. 대통령은 국가의 안위에 관계되는 중대한
+            교전상태에 있어서 국가를 보위하기 위하여 긴급한 조치가 필요하고
+            국회의 집회가 불가능한 때에 한하여 법률의 효력을 가지는 명령을 발할
+            수 있다.
+          </li>
+          <li>
+            재판의 전심절차로서 행정심판을 할 수 있다. 행정심판의 절차는 법률로
+            정하되, 사법절차가 준용되어야 한다. 선거운동은 각급 선거관리위원회의
+            관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야
+            한다.
+          </li>
+        </ul>
+      </div>
+
+      <div id="contents">
+        <h2>본문</h2>
+        <p>
+          국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를
+          유지하고, 시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를
+          통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다.
+        </p>
+
+        <p>
+          국회는 의원의 자격을 심사하며, 의원을 징계할 수 있다. 국회가 재적의원
+          과반수의 찬성으로 계엄의 해제를 요구한 때에는 대통령은 이를 해제하여야
+          한다.
+        </p>
+      </div>
+
+      <div id="footer">
+        <h2>푸터</h2>
+        <p>
+          이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그
+          효력을 지속한다.
+        </p>
+      </div>
+    </div>
+    <div class="boox1"><p>박스</p></div>
+    <div class="boox2"><p>박스</p></div>
+  </body>
+</html>

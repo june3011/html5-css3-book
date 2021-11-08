@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 1 */
+      img {
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid black;
+      }
+      .invisible {
+        visibility: hidden;
+      }
+
+      /* 2 */
+      /* z-index는 1, 2, 3 늦게 선언할 수록 가장 위 */
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      div#wrapper {
+        position: relative;
+      }
+      #b1 {
+        z-index: 1;
+        background: red;
+        bottom: 10%;
+        position: absolute;
+        left: 10%;
+      }
+      #b2 {
+        z-index: 3;
+        background: yellow;
+        bottom: 7%;
+        position: absolute;
+        left: 15%;
+      }
+      #b3 {
+        z-index: 1;
+        background: blue;
+        bottom: 1%;
+        position: absolute;
+        left: 13%;
+      }
+
+      /* 3 */
+      .box1 {
+        border: 1px solid black;
+        height: 30px;
+        width: 30%;
+        float: left;
+        margin: 5px;
+      }
+      .box2 {
+        border: 1px solid black;
+        height: 30px;
+        width: 60%;
+        float: left;
+        margin: 5px;
+      }
+      .box3 {
+        border: 1px solid black;
+        height: 30px;
+        width: 92%;
+        clear: left;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1 -->
+    <img
+      src="https://github.com/funnycom/html5-css3/blob/master/09/images/pic1.jpg?raw=true"
+    />
+    <img
+      src="https://github.com/funnycom/html5-css3/blob/master/09/images/pic2.jpg?raw=true"
+      class="invisible"
+    />
+    <img
+      src="https://github.com/funnycom/html5-css3/blob/master/09/images/pic3.jpg?raw=true"
+    />
+
+    <div id="wrapper">
+      <div class="box" id="b1">1</div>
+      <div class="box" id="b2">2</div>
+      <div class="box" id="b3">3</div>
+    </div>
+
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+  </body>
+</html>
